@@ -1,0 +1,39 @@
+{
+  "name": "Shotto",
+  "description": "",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_icon": {
+      "16": "./logos/shotto16.png",
+      "32": "./logos/shotto32.png",
+      "48": "./logos/shotto48.png",
+      "128": "./logos/shotto128.png"
+    }
+  },
+  "icons": {
+    "16": "./logos/shotto16.png",
+    "32": "./logos/shotto32.png",
+    "48": "./logos/shotto48.png",
+    "128": "./logos/shotto128.png"
+  },
+  "host_permissions": [
+    "https://storage.googleapis.com/shotto/static/"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.facebook.com/*"
+      ],
+      "js": [
+        "jquery-3.6.0.min.js",
+        "content.js"
+      ]
+    }
+  ]
+}
