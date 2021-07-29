@@ -108,7 +108,7 @@ $(document).ready(function () {
         }
         else {
           symbol.innerText = "Not Verified"
-          symbol.style.color = "#636060"
+          symbol.style.color = "#ffbc04"
         }
         info.post.querySelector('h4').appendChild(symbol)
       }
