@@ -6,6 +6,36 @@ body {
   flex-direction: column;
   font-family: 'Roboto', sans-serif;
   margin: 0px;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    scroll-behavior: smooth;
+  background-color: #202124;
+  margin-top: 10px;
+}
+
+/* width */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+*::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
 
 ul,
@@ -118,4 +148,35 @@ h4 {
 }
 .tgl-flip:checked + .tgl-btn:active:after {
   transform: rotateY(20deg);
+}
+
+.news-container {
+}
+
+.header-container {
+  display: inline-block;
+  width: 70%;
+  float: left;
+}
+.image-right-container {
+  display: inline-block;
+  /*width: 30%;*/
+  float: right;
+}
+.header-news-title, .left-body {
+  display: block;
+}
+.footer-date {
+  margin-top:10px;
+}
+.title {
+  font-size: 15px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.top-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
 }
