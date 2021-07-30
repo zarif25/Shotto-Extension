@@ -97,7 +97,7 @@ $(document).ready(function () {
           })
         }
         maxVal = Math.max(...matchNos)
-        isVerified = text_words.length <= 5 ? maxVal / text_words.length > 0.34 : maxVal / text_words.length > 0.2
+        isVerified = text_words.length <= 5 ? maxVal / text_words.length > 0.5 : maxVal / text_words.length > 0.2
         return [lang, matchNos.indexOf(maxVal), isVerified]
       }
 
